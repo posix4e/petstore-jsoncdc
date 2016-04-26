@@ -1,0 +1,22 @@
+[package]
+name = "jsoncdc"
+version = "0.0.7"
+authors = ["Alex Newman <posi@planet.com>",
+           "Jason Dusek <jason.dusek@gmail.com>"]
+build = "build.rs"
+
+
+[lib]
+name = "jsoncdc"
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "*"
+pgrustxn = "0.0.7"
+
+[dev-dependencies]
+rustfmt = "*"
+
+[build-dependencies]
+gcc = "*"
+
